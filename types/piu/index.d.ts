@@ -352,11 +352,11 @@ declare namespace piu {
   interface Bounds extends Position, Size {}
   interface TextConstructorParam extends ContentConstructorParam {
     blocks?: {
-      behavior: object | null;
-      style: Style | null;
+      behavior?: object | null;
+      style?: Style | null;
       spans: string | string[];
     }[];
-    string: string;
+    string?: string;
   }
   interface ImageConstructorParam extends ContentConstructorParam {
     path: string;
@@ -409,13 +409,13 @@ declare namespace piu {
     left: number;
   }
   interface LabelStyleConstructorParam extends StyleConstructorParamBase {
-    vertical: string;
+    vertical?: string;
   }
   interface StyleConstructorParamBase {
-    color: Color | Color[];
-    font: string;
-    horizontal: string;
-    top: number;
+    color?: Color | Color[];
+    font?: string;
+    horizontal?: string;
+    top?: number;
   }
   type Color = string;
 }
